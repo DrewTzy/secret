@@ -100,13 +100,6 @@ class Paper {
   }
 }
 
-const papers = Array.from(document.querySelectorAll('.paper'));
-
-papers.forEach(paper => {
-  const p = new Paper();
-  p.init(paper);
-});
-
 const refreshBtn = document.getElementById("btnRefresh");
 
 function handleClick() {
@@ -114,4 +107,12 @@ function handleClick() {
 }
 
 refreshBtn.addEventListener("click", handleClick);
+
+const papers = Array.from(document.querySelectorAll('.paper'));
+
+papers.forEach(paper => {
+  const p = new Paper();
+  p.init(paper);
+});
+
 
