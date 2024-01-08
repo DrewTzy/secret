@@ -97,3 +97,11 @@ papers.forEach(paper => {
   const p = new Paper();
   p.init(paper);
 });
+
+const refreshBtn = document.getElementById("btnRefresh");
+
+function handleClick() {
+  window.location.reload();
+}
+
+refreshBtn.addEventListener("click", handleClick);
