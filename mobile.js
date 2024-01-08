@@ -106,4 +106,10 @@ papers.forEach(paper => {
   p.init(paper);
 });
 
+const refreshBtn = document.querySelector('.btnRefresh');
+
+    // Add click event listener
+    refreshBtn.addEventListener('click', function() {
+      location.reload();
+    });
 
